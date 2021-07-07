@@ -142,7 +142,7 @@ const CryptoProvider = ({ children }) => {
         if (res) {
           let responder = res[1];
           if (responder) {
-            let dailyChange = Number(responder[4].toFixed(2));
+            let dailyChange = Number((responder[5]) *100).toFixed(2)
             let volume = Number(responder[7].toFixed(2));
             let lastPrice = Number(responder[6].toFixed(2));
 
@@ -197,7 +197,7 @@ const CryptoProvider = ({ children }) => {
         if (res) {
           let responder = res[1];
           if (responder) {
-            let dailyChange = Number(responder[4].toFixed(2));
+            let dailyChange = Number((responder[5]) *100).toFixed(2)
             let volume = Number(responder[7].toFixed(2));
             let lastPrice = Number(responder[6].toFixed(2));
 
@@ -212,6 +212,8 @@ const CryptoProvider = ({ children }) => {
       }
     };
   };
+
+  // 2. Ethereum USD
 
   const getEthereumUSD = () => {
     // OPEN WEBSOCKET CONNECTION
@@ -250,7 +252,7 @@ const CryptoProvider = ({ children }) => {
         if (res) {
           let responder = res[1];
           if (responder) {
-            let dailyChange = Number(responder[4].toFixed(2));
+            let dailyChange = Number((responder[5]) *100).toFixed(2)
             let volume = Number(responder[7].toFixed(2));
             let lastPrice = Number(responder[6].toFixed(2));
 
@@ -304,7 +306,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -358,7 +360,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -412,7 +414,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -465,7 +467,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -518,7 +520,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -572,7 +574,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -626,7 +628,7 @@ const CryptoProvider = ({ children }) => {
         if (res) {
           let responder = res[1];
           if (responder) {
-            let dailyChange = Number(responder[4].toFixed(2));
+            let dailyChange = Number((responder[5]) *100).toFixed(2)
             let volume = Number(responder[7].toFixed(2));
             let lastPrice = Number(responder[6].toFixed(2));
 
@@ -682,7 +684,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[5])
+          let dailyChange = Number((responder[5]) *100).toFixed(2)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -738,7 +740,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(4)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 
@@ -795,7 +797,7 @@ const CryptoProvider = ({ children }) => {
       if (res) {
         let responder = res[1];
         if (responder) {
-          let dailyChange = Number(responder[4].toFixed(2));
+          let dailyChange = Number((responder[5]) *100).toFixed(6)
           let volume = Number(responder[7].toFixed(2));
           let lastPrice = Number(responder[6].toFixed(2));
 

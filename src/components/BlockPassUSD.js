@@ -21,7 +21,7 @@ function TeatherUSD() {
       <tr>
         <td>{blockpassUSD.symbol}</td>
         <td>${blockpassUSD.lastPrice}</td>
-        <td>{blockpassUSD.dailyChange}%</td>
+        <td className={` ${blockpassUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{blockpassUSD.dailyChange}%</td>
         <td>{blockpassUSD.volume}</td>
       </tr>
     </>

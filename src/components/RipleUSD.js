@@ -17,7 +17,7 @@ function RipleUSD() {
       <tr>
         <td>{ripleUSD.symbol}</td>
         <td>${ripleUSD.lastPrice}</td>
-        <td>{ripleUSD.dailyChange} %</td>
+        <td className={` ${ripleUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{ripleUSD.dailyChange}%</td>
         <td>{ripleUSD.volume}</td>
       </tr>
     </>

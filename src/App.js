@@ -48,7 +48,7 @@ function App() {
             </>
           )}
         </AnimatePresence>
-        <Footer />
+       {loading ? '' : <Footer />  }
       </AnimateSharedLayout>
     </div>
   );

@@ -18,7 +18,7 @@ function EosUSD() {
       <tr>
         <td>{eosUSD.symbol}</td>
         <td>${eosUSD.lastPrice}</td>
-        <td>{eosUSD.dailyChange}%</td>
+        <td className={` ${eosUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{eosUSD.dailyChange}%</td>
         <td>{eosUSD.volume}</td>
       </tr>
     </>

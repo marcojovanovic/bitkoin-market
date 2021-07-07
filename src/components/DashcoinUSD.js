@@ -17,7 +17,8 @@ function DashcoinUSD() {
       <tr>
         <td>{dashUSD.symbol}</td>
         <td>${dashUSD.lastPrice}</td>
-        <td>{dashUSD.dailyChange}%</td>
+       
+        <td className={` ${dashUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{dashUSD.dailyChange}%</td>
         <td>{dashUSD.volume}</td>
       </tr>
     </>

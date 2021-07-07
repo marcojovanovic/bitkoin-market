@@ -23,7 +23,7 @@ function TeatherUSD() {
       <tr>
         <td>{teatherUSD.symbol}</td>
         <td>${teatherUSD.lastPrice}</td>
-        <td>{teatherUSD.dailyChange}%</td>
+        <td className={` ${teatherUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{teatherUSD.dailyChange}%</td>
         <td>{teatherUSD.volume}</td>
       </tr>
     </>

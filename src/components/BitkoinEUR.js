@@ -14,7 +14,7 @@ function BitkoinEUR() {
       <tr>
         <td>{bitkoinEUR.symbol}</td>
         <td>€{bitkoinEUR.lastPrice}</td>
-        <td>{bitkoinEUR.dailyChange}%</td>
+        <td className={` ${bitkoinEUR.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{bitkoinEUR.dailyChange}%</td>
         <td>{bitkoinEUR.volume}</td>
       </tr>
     </>

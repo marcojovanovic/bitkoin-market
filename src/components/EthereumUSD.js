@@ -15,7 +15,7 @@ function EthereumUSD() {
       <tr>
         <td>{ethereumUSD.symbol}</td>
         <td>${ethereumUSD.lastPrice}</td>
-        <td>{ethereumUSD.dailyChange}%</td>
+        <td className={` ${ethereumUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{ethereumUSD.dailyChange}%</td>
         <td>{ethereumUSD.volume}</td>
       </tr>
     </>

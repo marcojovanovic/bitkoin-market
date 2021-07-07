@@ -17,7 +17,7 @@ function SantimentNetwork() {
       <tr>
         <td>{santimentUSD.symbol}</td>
         <td>${santimentUSD.lastPrice}</td>
-        <td>{santimentUSD.dailyChange}%</td>
+        <td className={` ${santimentUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{santimentUSD.dailyChange}%</td>
         <td>{santimentUSD.volume}</td>
       </tr>
     </>

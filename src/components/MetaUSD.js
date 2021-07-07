@@ -13,7 +13,7 @@ function MetaUSD() {
       <tr>
         <td>{metaUSD.symbol}</td>
         <td>${metaUSD.lastPrice}</td>
-        <td>{metaUSD.dailyChange}%</td>
+        <td className={` ${metaUSD.dailyChange <= 0  ? 'redColor' : 'greenColor'}`}>{metaUSD.dailyChange}%</td>
         <td>{metaUSD.volume}</td>
       </tr>
     </>
