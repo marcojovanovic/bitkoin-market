@@ -23,7 +23,7 @@ getEthereumEUR()
     <>
       <tr>
         <td>{ethereumEUR.symbol}</td>
-        <td>${ethereumEUR.lastPrice}</td>
+        <td>€{ethereumEUR.lastPrice}</td>
         <td>{ethereumEUR.dailyChange}%</td>
         <td>{ethereumEUR.volume}</td>
       </tr>

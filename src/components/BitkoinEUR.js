@@ -13,7 +13,7 @@ function BitkoinEUR() {
     <>
       <tr>
         <td>{bitkoinEUR.symbol}</td>
-        <td>${bitkoinEUR.lastPrice}</td>
+        <td>€{bitkoinEUR.lastPrice}</td>
         <td>{bitkoinEUR.dailyChange}%</td>
         <td>{bitkoinEUR.volume}</td>
       </tr>

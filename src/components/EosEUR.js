@@ -16,7 +16,7 @@ function EosEUR() {
     <>
       <tr>
         <td>{eosEUR.symbol}</td>
-        <td>${eosEUR.lastPrice}</td>
+        <td>€{eosEUR.lastPrice}</td>
         <td>{eosEUR.dailyChange}%</td>
         <td>{eosEUR.volume}</td>
       </tr>
