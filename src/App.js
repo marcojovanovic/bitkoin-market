@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import './sass/main.scss';
+import bgStar from './images/bg-stars.svg'
 
 // Components
 
@@ -8,6 +9,7 @@ import Banner from './components/Banner';
 import Loader from './components/Loader';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 
 import HomePage from './pages/HomePage';
 
@@ -21,7 +23,7 @@ function App() {
   }, [loading]);
 
   return (
-    <div className="basic">
+   <div style={{backgroundImage: `url("${bgStar}")`}} className='app-bg'>
       <AnimateSharedLayout type="crossfade">
         <Header />
         <AnimatePresence>

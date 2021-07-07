@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const banner = {
   animate: {
@@ -22,47 +22,48 @@ const letterAni = {
 };
 
 const Banner = () => {
-  const [playMarquee, setPlayMarquee] = useState(false);
+  const [playmovingLetters, setPlaymovingLetters] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setPlayMarquee(true);
+      setPlaymovingLetters(true);
     }, 2000);
   }, []);
   return (
-    <motion.div className='banner' variants={banner}>
-      <BannerRowCenter title={"bitkoin_market"} playMarquee={playMarquee} />
-     
+    <motion.div className="banner" variants={banner}>
+      <BannerRowCenter title={'bitkoin_market'} playmovingLetters={playmovingLetters} />
     </motion.div>
   );
 };
 
 const AnimatedLetters = ({ title, disabled }) => (
   <motion.span
-    className='row-title'
+    className="row-title"
     variants={disabled ? null : banner}
-    initial='initial'
-    animate='animate'>
-    {[...title].map((letter) => (
+    initial="initial"
+    animate="animate"
+  >
+    {[...title].map((letter, index) => (
       <motion.span
-        className='row-letter'
-        variants={disabled ? null : letterAni}>
+        key={index}
+        className="row-letter"
+        variants={disabled ? null : letterAni}
+      >
         {letter}
       </motion.span>
     ))}
   </motion.span>
 );
 
-
-
-const BannerRowCenter = ({ title, playMarquee }) => {
+const BannerRowCenter = ({ title, playmovingLetters }) => {
   return (
-    <div className={`banner-row marquee  ${playMarquee && "animate"}`}>
+    <div className={`banner-row movingLetters  ${playmovingLetters && 'animate'}`}>
       <motion.div
         initial={{ y: 310 }}
         animate={{ y: 0 }}
         transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1 }}
-        className='marquee__inner'>
+        className="movingLetters__inner"
+      >
         <AnimatedLetters title={title} disabled />
         <AnimatedLetters title={title} />
         <AnimatedLetters title={title} disabled />

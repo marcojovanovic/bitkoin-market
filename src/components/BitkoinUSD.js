@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { CryptoContext } from '../context';
 
-import './coin.css';
 
 function BitkoinUSD() {
   const { bitkoinUSD, getBitkoinUSD } = React.useContext(CryptoContext);

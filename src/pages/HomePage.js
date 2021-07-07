@@ -1,7 +1,4 @@
 import React from 'react';
-// IMORT MATERIAL UI
-
-import '../components/coin.css';
 
 // IMPORT COMPONENTS
 
@@ -35,20 +32,21 @@ function HomePage() {
                 <th>Volume</th>
               </tr>
             </thead>
-
-            <BitkoinUSD />
-            <BitkoinEUR />
-            <EthereumUSD />
-            <EhtereumEUR />
-            <EosUSD />
-            <EosEUR />
-            <DashcoinUSD />
-            <RipleUSD />
-            <DogecoinUSD />
-            <MetaUSD />
-            <SantimentNetwork />
-            <TeatherUSD />
-            <BlockPassUSD />
+            <tbody>
+              <BitkoinUSD />
+              <BitkoinEUR />
+              <EthereumUSD />
+              <EhtereumEUR />
+              <EosUSD />
+              <EosEUR />
+              <DashcoinUSD />
+              <RipleUSD />
+              <DogecoinUSD />
+              <MetaUSD />
+              <SantimentNetwork />
+              <TeatherUSD />
+              <BlockPassUSD />
+            </tbody>
           </table>
         </>
       </div>
