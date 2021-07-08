@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+import { CryptoContext } from '../context';
+
 const banner = {
   animate: {
     transition: {
@@ -22,7 +24,11 @@ const letterAni = {
 };
 
 const Banner = () => {
-  const [playmovingLetters, setPlaymovingLetters] = useState(false);
+
+
+  const { playmovingLetters, setPlaymovingLetters } = React.useContext(CryptoContext);
+
+ 
 
   useEffect(() => {
     setTimeout(() => {

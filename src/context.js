@@ -813,6 +813,11 @@ const CryptoProvider = ({ children }) => {
   };
   };
 
+
+  // Banner 
+
+  const [playmovingLetters, setPlaymovingLetters] = useState(false);
+
   return (
     <CryptoContext.Provider
       value={{
@@ -841,7 +846,9 @@ const CryptoProvider = ({ children }) => {
         getDashcoinUSD,
         getDogecoinUSD,
         getMetaUSD,
-        getBlockPassUSD
+        getBlockPassUSD,
+        playmovingLetters,
+        setPlaymovingLetters
       }}
     >
       {children}
