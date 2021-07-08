@@ -19,5 +19,9 @@
   background-position:center;
   background-repeat:'no-repeat';
   color:tomato;
+
+  @media (max-width: $layout-breakpoint-xsmall) {
+    font-size: 2rem;
+  }
   
 }
