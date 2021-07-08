@@ -12,6 +12,7 @@ Podaci na ovoj aplikaciji se dobijaju preko Bitfinex API i to su aktuelni podaci
  #### WebSocket
  #### Framer Motion
  #### Webp images
+ #### Context API
 
 
 
