@@ -11,13 +11,13 @@ Podaci na ovoj aplikaciji se dobijaju preko Bitfinex API i to su aktuelni podaci
  #### SASS
  #### WebSocket
  #### Framer Motion
+ #### Webp images
 
 
 
-  
 ## Pogledaj kako radi projekat
 
- - [Bitkoin_Market](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Bitkoin_Market](https://bitkoin-market-829a81.netlify.app/)
  
 ## Documentation
 
